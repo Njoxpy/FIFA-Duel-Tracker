@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+header{
+    display: flex;
+    align-items: center;
+}
+
+.ul-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
