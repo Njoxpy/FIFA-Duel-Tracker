@@ -1,17 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  /* Primary Colors */
+  --bg: #f5f5f5;
+  --title-color: #333333;
+  --primary-color: #1e90ff; /* Dodger Blue */
+  --secondary-color: #ffd700; /* Golden Yellow */
+  --background-color: #f5f5f5; /* Light Gray */
+
+  /* Navbar Specific Colors */
+  --navbar-bg-color: var(--primary-color);
+  --navbar-text-color: #ffffff; /* White */
+  --navbar-active-link-color: var(--secondary-color);
+  --navbar-hover-bg-color: #1c86ee; /* Slightly Darker Blue */
+  --navbar-hover-text-color: #ffffff; /* White */
+
+  /* Borders and Dividers */
+  --divider-color: #cccccc; /* Light Gray */
+
+  --footer-bg-color: #333333;
+  --footer-text-color: #ffffff;
+  --footer-link-color: #ffd700;
+  --footer-link-hover-color: #ffa500;
+  --footer-divider-color: #555555;
+}
+a,
+.logo {
+  text-decoration: none;
 }
 
 /* navbar */
-header{
-    display: flex;
-    align-items: center;
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.nav-item {
+  color: var(--navbar-text-color);
 }
 
-.ul-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+.nav-item:hover {
+  background-color: var(--navbar-hover-bg-color);
+  color: var(--navbar-hover-text-color);
+}
+
+.nav-item:active {
+  color: var(--navbar-active-link-color);
+}
+
+.logo {
+  color: white;
+}
+.ul-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* footer */
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.add-link {
+  color: var(--footer-link-color);
+}
+
+.add-link:hover {
+  background-color: var(--footer-link-hover-color);
+}
+
+.hello-section {
+  background-color: var(--bg);
+  padding: 10px;
+}
+
+.heading-hello {
+  color: var(--title-color);
 }

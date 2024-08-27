@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Statistics() {
   return (
     <div className="statistics">
@@ -22,7 +24,7 @@ function Statistics() {
       </div>
       <div>
         <p>
-          Explore the <a href="/table">leaderboard</a> to see who’s dominating!
+          Explore the <Link to="/table">leaderboard</Link> to see who’s dominating!
         </p>
       </div>
     </div>
