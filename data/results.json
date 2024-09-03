@@ -1,0 +1,112 @@
+[
+    "reults", {
+        "player": "player1",
+        "scorep1": "23",
+        "scorep2": "12",
+        "teamp1": "newcastle",
+        "teamp2": "chelsea",
+        "finished": "yes",
+        "winner": "yes",
+        "date": "2024-08-27",
+        "winType": "regular"
+    },
+    {
+        "player": "player2",
+        "scorep1": "30",
+        "scorep2": "25",
+        "teamp1": "manchester-united",
+        "teamp2": "liverpool",
+        "finished": "yes",
+        "winner": "yes",
+        "date": "2024-08-28",
+        "winType": "regular"
+    },
+    {
+        "player": "player3",
+        "scorep1": "15",
+        "scorep2": "15",
+        "teamp1": "arsenal",
+        "teamp2": "tottenham",
+        "finished": "yes",
+        "winner": "no",
+        "date": "2024-08-29",
+        "winType": "draw"
+    },
+    {
+        "player": "player4",
+        "scorep1": "45",
+        "scorep2": "38",
+        "teamp1": "barcelona",
+        "teamp2": "real-madrid",
+        "finished": "yes",
+        "winner": "yes",
+        "date": "2024-08-30",
+        "winType": "regular"
+    },
+    {
+        "player": "player5",
+        "scorep1": "22",
+        "scorep2": "20",
+        "teamp1": "bayern-munich",
+        "teamp2": "psg",
+        "finished": "yes",
+        "winner": "yes",
+        "date": "2024-08-31",
+        "winType": "extratime-win"
+    },
+    {
+        "player": "player6",
+        "scorep1": "18",
+        "scorep2": "22",
+        "teamp1": "juventus",
+        "teamp2": "inter-milan",
+        "finished": "yes",
+        "winner": "no",
+        "date": "2024-09-01",
+        "winType": "regular"
+    },
+    {
+        "player": "player7",
+        "scorep1": "30",
+        "scorep2": "30",
+        "teamp1": "manchester-city",
+        "teamp2": "chelsea",
+        "finished": "yes",
+        "winner": "no",
+        "date": "2024-09-02",
+        "winType": "draw"
+    },
+    {
+        "player": "player8",
+        "scorep1": "40",
+        "scorep2": "35",
+        "teamp1": "porto",
+        "teamp2": "benfica",
+        "finished": "yes",
+        "winner": "yes",
+        "date": "2024-09-03",
+        "winType": "regular"
+    },
+    {
+        "player": "player9",
+        "scorep1": "12",
+        "scorep2": "25",
+        "teamp1": "ajax",
+        "teamp2": "real-madrid",
+        "finished": "yes",
+        "winner": "no",
+        "date": "2024-09-04",
+        "winType": "regular"
+    },
+    {
+        "player": "player10",
+        "scorep1": "24",
+        "scorep2": "22",
+        "teamp1": "dortmund",
+        "teamp2": "leipzig",
+        "finished": "yes",
+        "winner": "yes",
+        "date": "2024-09-05",
+        "winType": "regular"
+    }
+]
