@@ -6,28 +6,26 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
 }
 
 html {
   scroll-behavior: smooth;
 }
 :root {
-  /* Primary Colors */
   --bg: #f5f5f5;
   --title-color: #333333;
-  --primary-color: #1e90ff; /* Dodger Blue */
-  --secondary-color: #ffd700; /* Golden Yellow */
-  --background-color: #f5f5f5; /* Light Gray */
+  --primary-color: #1e90ff;
+  --secondary-color: #ffd700;
+  --background-color: #f5f5f5;
 
-  /* Navbar Specific Colors */
   --navbar-bg-color: var(--primary-color);
-  --navbar-text-color: #ffffff; /* White */
+  --navbar-text-color: #ffffff;
   --navbar-active-link-color: var(--secondary-color);
-  --navbar-hover-bg-color: #1c86ee; /* Slightly Darker Blue */
-  --navbar-hover-text-color: #ffffff; /* White */
+  --navbar-hover-bg-color: #1c86ee;
+  --navbar-hover-text-color: #ffffff;
 
-  /* Borders and Dividers */
-  --divider-color: #cccccc; /* Light Gray */
+  --divider-color: #cccccc;
 
   --footer-bg-color: #333333;
   --footer-text-color: #ffffff;
@@ -40,7 +38,6 @@ a,
   text-decoration: none;
 }
 
-/* navbar */
 header {
   background-color: var(--primary-color);
   display: flex;
@@ -74,7 +71,6 @@ ul {
   list-style: none;
 }
 
-/* footer */
 footer {
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
@@ -87,10 +83,11 @@ footer {
 
 .add-link {
   color: var(--footer-link-color);
+  padding-top: 10px;
 }
 
 .add-link:hover {
-  background-color: var(--footer-link-hover-color);
+  color: white;
 }
 
 .hello-section {

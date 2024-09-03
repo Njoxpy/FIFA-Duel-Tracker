@@ -4,7 +4,7 @@ function RootLayout(){
     return(
         <div className="navbar">
             <header>
-                <h3><a href="/" className="logo">Logo</a></h3>
+                <h3><a href="/" className="logo">FIFA Duel</a></h3>
                 <nav>
                     <ul className="ul-container">
                         <li><Link to="/" className="nav-item">Home</Link></li>

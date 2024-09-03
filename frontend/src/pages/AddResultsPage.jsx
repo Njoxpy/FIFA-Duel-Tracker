@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/addResults.css";
+import Footer from "../components/Footer";
 
 function AddResults() {
   // Create states
@@ -46,6 +47,7 @@ function AddResults() {
   };
 
   return (
+    <>
     <div className="add-results">
       <form onSubmit={handleSubmit}>
         <h2>Add Your Match Results</h2>
@@ -157,6 +159,8 @@ function AddResults() {
         {error && <p className="error">{error}</p>}
       </form>
     </div>
+    <Footer />
+    </>
   );
 }
 

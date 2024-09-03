@@ -1,11 +1,13 @@
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 import Hello from "./Hello";
 
-function HomePage(){
+function HomePage() {
+  <>
     <div>
-        <Hello />
-        <Footer />
+      <Hello />
     </div>
+      <Footer />
+  </>;
 }
 
 export default HomePage;

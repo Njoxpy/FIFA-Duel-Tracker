@@ -1,0 +1,6 @@
+# get request to get all statistics
+# create variables
+@baseUrl = http://localhost:5000/
+@apiVersion = api/
+
+GET http://localhost:5000/api/statistics

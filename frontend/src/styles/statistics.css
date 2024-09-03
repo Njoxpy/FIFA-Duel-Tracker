@@ -1,0 +1,20 @@
+.statistics {
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.player-1-container,
+.player-2-container {
+  padding: 10px;
+}
+
+.leaderboard-link {
+  text-decoration: underline;
+}
+
+.leaderboard-link:hover {
+  transition: text-decoration 0.2s ease;
+}
