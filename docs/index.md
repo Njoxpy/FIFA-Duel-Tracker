@@ -88,3 +88,12 @@
 
   - **Components:** Component used into the page is the footer.
   - **Styles:** Describe the styling approach (e.g., CSS, SASS) and where styles are located.
+
+## Data Flow
+
+```md
+[Browser (React App)] <-- API Call (Fetch) --> [Backend (API)] <---> [Database]
+↓ ↓ ↓
+Render Data Serve JSON Data Fetch Data from
+(from API) Database
+```

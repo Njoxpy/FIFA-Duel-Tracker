@@ -1,13 +1,41 @@
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import "../styles/table.css";
 
 function LeagueTable() {
+  const [teams, setTeams] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const URL = "http://localhost:5000/api/table";
+
+    fetch(URL)
+      .then((response) => {
+        if (!response.ok) {
+          console.log("network error");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setTeams(data);
+        setLoading(false);
+      })
+      // .then((data) => console.log(data))
+      .catch((error) => {
+        console.error(`There was a problem with fetch operation ${error}`);
+      });
+  }, []);
+
+  if (loading) {
+    <div>Loading....</div>;
+  }
   return (
     <>
       <div className="table-container">
-        <h4 className="league-table-heading">League Table</h4>
         <div className="table-conatiner">
-          <table>
+          <hr />
+          <h4 className="league-table-heading">League Table</h4>
+          <table className="content-table">
             <thead>
               <tr>
                 <th>player</th>
@@ -17,55 +45,14 @@ function LeagueTable() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>player 1</td>
-                <td>18</td>
-                <td>6</td>
-                <td>+5</td>
-              </tr>
-              <tr>
-                <td>player 2</td>
-                <td>15</td>
-                <td>12</td>
-                <td>-3</td>
-              </tr>
-              <tr>
-                <td>player 2</td>
-                <td>15</td>
-                <td>12</td>
-                <td>-3</td>
-              </tr>
-              <tr>
-                <td>player 2</td>
-                <td>15</td>
-                <td>12</td>
-                <td>-3</td>
-              </tr>
-              <tr>
-                <td>player 2</td>
-                <td>15</td>
-                <td>12</td>
-                <td>-3</td>
-              </tr>
-              <tr>
-                <td>player 2</td>
-                <td>15</td>
-                <td>12</td>
-                <td>-3</td>
-              </tr>
-              <tr>
-                <td>player 2</td>
-                <td>15</td>
-                <td>12</td>
-                <td>-3</td>
-              </tr>
-              <tr>
-                <td>player 2</td>
-                <td>15</td>
-                <td>12</td>
-                <td>-3</td>
-              </tr>
-              
+              {teams.map((team) => (
+                <tr key={team.team}>
+                  <td>{team.team}</td>
+                  <td>{team.matchesPlayed}</td>
+                  <td>{team.matchesWon}</td>
+                  <td>{team.points}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -78,4 +65,6 @@ function LeagueTable() {
 
 export default LeagueTable;
 
-// add-result
+/*
+here the league table data will be fetched from an api and should be encoded into the website 
+ */

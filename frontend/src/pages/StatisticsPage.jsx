@@ -27,8 +27,11 @@ function Statistics() {
         </div>
         <div>
           <p>
-            Explore the <Link to="/table" className="leaderboard-link">leaderboard</Link> to see who’s
-            dominating!
+            Explore the{" "}
+            <Link to="/table" className="leaderboard-link">
+              leaderboard
+            </Link>{" "}
+            to see who’s dominating!
           </p>
         </div>
       </div>

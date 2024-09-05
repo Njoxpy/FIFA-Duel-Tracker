@@ -104,6 +104,7 @@ app.get("/api/recentMatches", (req, res) => {
 
 app.get("/api/table", (req, res) => {
   res.json(table);
+  console.log(table);
 });
 
 app.post("/api/addResults", (req, res) => {

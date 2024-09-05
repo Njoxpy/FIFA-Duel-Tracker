@@ -1,0 +1,24 @@
+[
+  {
+    "team": "barcelona",
+    "matchesPlayed": 10,
+    "matchesWon": 8,
+    "matchesDrawn": 1,
+    "matchesLost": 1,
+    "goalsScored": 30,
+    "goalsConceded": 10,
+    "goalDifference": 20,
+    "points": 25
+  },
+  {
+    "team": "manchester-united",
+    "matchesPlayed": 10,
+    "matchesWon": 7,
+    "matchesDrawn": 1,
+    "matchesLost": 2,
+    "goalsScored": 24,
+    "goalsConceded": 12,
+    "goalDifference": 12,
+    "points": 22
+  }
+]

@@ -6,7 +6,7 @@ function HomePage() {
     <div>
       <Hello />
     </div>
-      <Footer />
+    <Footer />
   </>;
 }
 
