@@ -1,14 +1,13 @@
 {
-  "name": "backend",
+  "name": "fifa",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "NjoxPy",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2"
@@ -19,5 +18,17 @@
     "eslint-plugin-react": "^7.35.1",
     "globals": "^15.9.0",
     "nodemon": "^3.1.4"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": "backend for fifa faceoff",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Njoxpy/FIFA-Duel-Tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Njoxpy/FIFA-Duel-Tracker/issues"
+  },
+  "homepage": "https://github.com/Njoxpy/FIFA-Duel-Tracker#readme"
 }
