@@ -52,3 +52,5 @@ yarn-error.log*
 me.sh
 
 .idea
+
+.env
