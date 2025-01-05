@@ -54,3 +54,8 @@ me.sh
 .idea
 
 .env
+
+.vscode
+.vs
+
+node_modules
