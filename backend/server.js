@@ -12,6 +12,9 @@ const app = express();
 
 console.log(`NODE ENV: ${process.env.NODE_ENV}`);
 
+// connectDb
+const connectDb = require("./config/DB");
+
 const matchRoutes = require("./routes/match/match.routes");
 const playerRoutes = require("./routes/player/player.routes");
 const tableRoutes = require("./routes/table/table.routes");
@@ -67,9 +70,6 @@ app.use((error, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(
-    `Server running in ${
-      process.env.NODE_ENV || "development"
-    } mode on port ${PORT}`
-  );
+  console.log(`Listening at: http://localhost:${PORT}`);
+  connectDb();
 });
